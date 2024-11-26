@@ -63,47 +63,62 @@ body {
 }
 
 
-.features{
-    padding-top: 10px;
+.what-we-offer {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
 }
 
-.features .col-7{
-    text-align: center;
-    padding: 200px 2px;
-    transition: transform 0.5s;
-    border-radius: 20px;
+.what-we-offer h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
 }
 
-.features .col-7 img{
-    width: 40%;
-    margin-top: 20px;
-    border-radius: 100%;
+.what-we-offer p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
 }
 
-.feat{
-    max-width: 1080px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;}
+.offer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
 
+.offer-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
 
-.col-7{
-        flex-basis: 50%;
-        min-width: 200px;
-        margin-bottom: 100px;
-    }
-    
-.col-7 img{
-        width: 100%;
-    }
+.offer-card:hover {
+  transform: translateY(-10px);
+}
 
+.offer-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
 
-.bow{
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
+.offer-card h3 {
+  font-size: 1.5rem;
+  margin: 15px 0;
+  color: #333;
+}
+
+.offer-card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
 
 
 
