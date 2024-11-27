@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Management</title>
+    <title>Your Event Management Platform</title>
     <link rel="stylesheet" href="event.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -11,18 +11,29 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="navbar-brand">Eventify</div>
-        <ul class="navbar-nav">
-            <li><a href="#">Home</a></li>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="navbar-nav" id="menu">
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">Features</a></li>
             <li><a href="#">Contact</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="Signup.html">Sign Up</a></li>
         </ul>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero-section">
-        <h1>Welcome to Eventify</h1>
-        <p>Make your events extraordinary with ease.</p>
+        <h1>Welcome</h1>
+        <p>Your one-stop platform to create, manage, and succeed with your events.</p>
         <button class="hero-button">Learn More</button>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>About Event</h2>
+        <p>Event is a platform designed to simplify the event planning process. Whether you're organizing a tech conference, a music festival, or a food carnival, Eventify provides all the tools you need to make your event a success.</p>
     </section>
 
     <!-- Categories Section -->
@@ -30,20 +41,36 @@
         <h2>Browse by Categories</h2>
         <div class="category-scroll">
             <div class="category-card">
-                <i class="fas fa-laptop-code"></i>
+                <img src="tech-removebg-preview.png" alt="Tech">
                 <h5>Tech</h5>
             </div>
             <div class="category-card">
-                <i class="fas fa-music"></i>
+                <img src="music1-removebg-preview.png" alt="Music">
                 <h5>Music</h5>
             </div>
             <div class="category-card">
-                <i class="fas fa-utensils"></i>
+                <img src="food1-removebg-preview.png" alt="Food">
                 <h5>Food</h5>
             </div>
             <div class="category-card">
-                <i class="fas fa-business-time"></i>
+                <img src="art1.PNG" alt="Art">
+                <h5>Art & Culture</h5>
+            </div>
+            <div class="category-card">
+                <img src="bussiness-removebg-preview.png" alt="Business">
                 <h5>Business</h5>
+            </div>
+            <div class="category-card">
+                <img src="fit-removebg-preview.png" alt="Sports">
+                <h5>Sports</h5>
+            </div>
+            <div class="category-card">
+                <img src="comm1-removebg-preview.png" alt="Sports">
+                <h5>Seminar</h5>
+            </div>
+            <div class="category-card">
+                <img src="" alt="Sports">
+                <h5>Sports</h5>
             </div>
         </div>
     </section>
@@ -51,60 +78,70 @@
     <!-- Everything You Need Section -->
     <section class="features">
         <h2>Everything You Need to Succeed</h2>
-        <p>Powerful tools to make your events extraordinary</p>
+        <p>Discover the most powerful tools to create extraordinary events.</p>
         <div class="feature-cards">
             <div class="feature-card">
-                <i class="fas fa-ticket-alt"></i>
+                <img src="ticketing-removebg-preview.png" alt="Smart Ticketing">
                 <h3>Smart Ticketing</h3>
-                <p>Sell tickets with ease and reach your audience anywhere.</p>
+                <p>Sell tickets effortlessly and reach your audience anywhere.</p>
             </div>
             <div class="feature-card">
-                <i class="fas fa-chart-bar"></i>
+                <img src="analytics.PNG" alt="Analytics">
                 <h3>Analytics & Insights</h3>
-                <p>Track attendance, revenue, and engagement in real-time.</p>
+                <p>Track attendance, revenue, and engagement in real time.</p>
             </div>
             <div class="feature-card">
-                <i class="fas fa-globe"></i>
+                <img src="global-removebg-preview.png" alt="Global Reach">
                 <h3>Global Reach</h3>
                 <p>Promote your events to a global audience effortlessly.</p>
             </div>
             <div class="feature-card">
-                <i class="fas fa-lock"></i>
+                <img src="secure-removebg-preview.png" alt="Secure Payments">
                 <h3>Secure Payments</h3>
                 <p>Ensure secure and seamless transactions for attendees.</p>
             </div>
             <div class="feature-card">
-                <i class="fas fa-money-check"></i>
+                <img src="payout-removebg-preview.png" alt="Instant Payouts">
                 <h3>Instant Payouts</h3>
-                <p>Get your revenue instantly without hassle.</p>
+                <p>Receive revenue instantly without hassle.</p>
             </div>
             <div class="feature-card">
-                <i class="fas fa-users"></i>
+                <img src="comm1-removebg-preview.png" alt="Community Tools">
                 <h3>Community Tools</h3>
                 <p>Build connections and engage your audience with ease.</p>
             </div>
         </div>
     </section>
 
-    <!-- Event Categories with Examples -->
+    <!-- Events Section -->
     <section class="events">
         <h2>Upcoming Events</h2>
         <p>Join thousands of successful event organizers.</p>
         <div class="event-categories">
             <div class="event-card">
-                <img src="tech-event.jpg" alt="Tech Event">
+                <img src="teche.PNG" alt="Tech Event">
                 <h3>Tech Conference 2024</h3>
                 <p>Explore the latest in technology and innovation.</p>
             </div>
             <div class="event-card">
-                <img src="music-event.jpg" alt="Music Event">
+                <img src="musice.PNG" alt="Music Event">
                 <h3>Live Music Fest</h3>
                 <p>Experience the best live performances by top artists.</p>
             </div>
             <div class="event-card">
-                <img src="food-event.jpg" alt="Food Event">
+                <img src="foode.PNG" alt="Food Event">
                 <h3>Food Carnival</h3>
                 <p>Enjoy delicious cuisines from around the world.</p>
+            </div>
+            <div class="event-card">
+                <img src="art-event.jpg" alt="Art Event">
+                <h3>Art Exhibition</h3>
+                <p>Discover amazing art from talented creators.</p>
+            </div>
+            <div class="event-card">
+                <img src="sporte.PNG" alt="Sports Event">
+                <h3>Sports Championship</h3>
+                <p>Cheer for your favorite teams in live competitions.</p>
             </div>
         </div>
     </section>
@@ -112,19 +149,65 @@
     <!-- Testimonial Section -->
     <section class="testimonials">
         <h2>What Our Organizers Say</h2>
-        <div class="testimonial-card">
-            <p>"Eventify made managing my events so simple. My ticket sales increased by 40%!"</p>
-            <h4>- Jane Doe, Tech Organizer</h4>
+        <div class="testimonial-container">
+            <div class="testimonial-card">
+                <p>"Eventify made managing my events so simple. My ticket sales increased by 40%!"</p>
+                <h4>- Jane Doe, Tech Organizer</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"The global reach and analytics provided by Eventify helped me expand my audience!"</p>
+                <h4>- John Smith, Music Organizer</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"From ticketing to payments, everything was seamless. Highly recommended!"</p>
+                <h4>- Alice Brown, Food Organizer</h4>
+            </div>
+        </div>
+        <button class="scroll-button">See More Testimonials</button>
+    </section>
+
+    <!-- Brand Sponsors -->
+    <section class="brand-sponsors">
+        <h2>Trusted by Top Brands</h2>
+        <div class="brand-logos">
+            <img src="brand1.png" alt="Brand 1">
+            <img src="brand2.png" alt="Brand 2">
+            <img src="brand3.png" alt="Brand 3">
+            <img src="brand4.png" alt="Brand 4">
         </div>
     </section>
 
     <!-- Footer Section -->
     <footer>
-        <h2>Ready to Host Your Event?</h2>
-        <p>Get started in minutes with our easy-to-use platform.</p>
-        <a href="signup.html" class="cta-button">
-            <i class="fas fa-calendar-plus"></i> Create Your Event
-        </a>
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>About Eventify</h3>
+                <p>Eventify is your trusted platform for creating, managing, and succeeding with events of any scale.</p>
+            </div>
+            <div class="newsletter">
+                <h3>Sign Up for Our Newsletter</h3>
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+            <div class="footer-links">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 K&E. All Rights Reserved. <a href="#">Terms and Conditions</a></p>
+        </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+    </script>
 </body>
 </html>
